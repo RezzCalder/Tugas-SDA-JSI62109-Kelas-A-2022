@@ -1,0 +1,66 @@
+package tugas2;
+
+import java.util.LinkedList;
+
+public class tugas2linkedlist {
+    public static void main(String[] args) {
+
+        //add nama "muhammad rezky ramadhan"
+        LinkedList <String> nama = new LinkedList<>();
+        nama.add("m");
+        nama.add("u");
+        nama.add("h");
+        nama.add("a");
+        nama.add("m");
+        nama.add("m");
+        nama.add("a");
+        nama.add("d");
+        nama.add("");
+        nama.add("r");
+        nama.add("e");
+        nama.add("z");
+        nama.add("k");
+        nama.add("y");
+        nama.add("");
+        nama.add("r");
+        nama.add("a");
+        nama.add("m");
+        nama.add("a");
+        nama.add("d");
+        nama.add("h");
+        nama.add("a");
+        nama.add("n");
+        System.out.println("output nama\n:"+ nama +", Ukuran :" + nama.size());
+        
+        //add linkedlist
+        nama.addFirst("a");
+        nama.add(1,"l");   
+        nama.addLast("i");
+        System.out.println("output tambahan nama\n:"+ nama +", Ukuran :" + nama.size());
+        
+        //set linkedlist atau sisip
+        nama.set(11,"h");
+        nama.set(13,"n");
+        System.out.println("output sisipan pada nama\n:"+ nama +", Ukuran :" + nama.size());
+        
+        //delete linked list atau penghapusan
+        nama.remove(22);
+        nama.removeLast();
+        System.out.println("output nama setelah ada karakter dihapus \n:"+ nama +", Ukuran :" + nama.size());
+
+        //POP dan push
+        nama.push("Profesional");
+        nama.push("Pintar");
+        nama.push("Rajin");
+        System.out.println("Setelah push \n" + nama);
+
+        nama.pop();
+        System.out.println("Setelah pop nama saya adalah \n" + nama);
+
+        //is Empty
+        System.out.println("Is List empty? \n" + nama.isEmpty());
+        nama.clear();
+        System.out.println("Is List empty? \n" + nama.isEmpty());
+        
+    }
+}
