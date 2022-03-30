@@ -1,6 +1,5 @@
-package TuBesKelompok;
-
 import java.util.LinkedList;
+import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.Queue;
 
@@ -27,7 +26,7 @@ public class UsahaBatuBata {
         LinkedList <String> ambilMerah = new LinkedList<>();
         LinkedList <String> ambilHebel = new LinkedList<>();
 
-        
+        ArrayList <Integer> riwayat_beli = new ArrayList<Integer>();
 
         Queue <Integer> antrian = new LinkedList();
 
@@ -44,7 +43,8 @@ public class UsahaBatuBata {
             System.out.println("4. Tampilkan Antrian");
             System.out.println("5. Tampilkan Pesanan");
             System.out.println("6. Dequeue Pelanggan");
-            System.out.println("7. SELESAI");
+            System.out.println("7. Riwayat ID Pelanggan");
+            System.out.println("8. SELESAI");
             System.out.println("-------------------------------------------------------------");
             System.out.println("Masukkan Pilihan : ");
             int input = pilih.nextInt();
@@ -124,6 +124,7 @@ public class UsahaBatuBata {
                 System.out.print("Masukkan ID Pelanggan : ");
                 int input1 = pilih1.nextInt();
                 antrian.add(input1);
+                riwayat_beli.add(input1);
                 break;
 
                 case 3:
@@ -188,6 +189,10 @@ public class UsahaBatuBata {
                 break;
 
                 case 7 :
+                System.out.println(riwayat_beli);
+                break;
+
+                case 8 :
                 System.exit(0);
                 break;
 
