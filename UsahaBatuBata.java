@@ -17,10 +17,6 @@ public class UsahaBatuBata {
 
     public static void main(String[] args) {
         
-        Integer BataKapur;
-        Integer BataMerahInter;
-        Integer BataMerah;
-        Integer BataHebel;
         boolean bool = true;
 
         LinkedList <String> stokKapur = new LinkedList<>();
@@ -32,10 +28,6 @@ public class UsahaBatuBata {
         LinkedList <String> ambilMerah = new LinkedList<>();
         LinkedList <String> ambilHebel = new LinkedList<>();
 
-        ArrayList KapurPutih = new ArrayList();
-        ArrayList MerahInter = new ArrayList();
-        ArrayList Merah = new ArrayList();
-        ArrayList Hebel = new ArrayList();
         
 
         Queue <Integer> antrian = new LinkedList();
@@ -145,7 +137,6 @@ public class UsahaBatuBata {
                 int input2 = pilih2.nextInt();
     
                     if (input2 == 1) {
-                        Scanner pilihjenis1 = new Scanner(System.in);
                         System.out.println("\t1 Paket = 1000 biji");
                         ambilKapur.push(stokKapur.pop());
                         System.out.println("Kapur putih yang diambil : " + ambilKapur);
@@ -154,7 +145,6 @@ public class UsahaBatuBata {
                             
 
                     }else if (input2 == 2){
-                        Scanner pilihjenis2 = new Scanner(System.in);
                         System.out.println("\t1 Paket = 2000 biji");
                         ambilMerahInter.push(stokMerahInter.pop());
                         System.out.println("Merah Interlock yang diambil : " + ambilMerahInter);
@@ -162,7 +152,6 @@ public class UsahaBatuBata {
         
 
                     }else if (input2 == 3){
-                        Scanner pilihjenis3 = new Scanner(System.in);
                         System.out.println("\t1 Paket = 5000 biji");
                         ambilMerah.push(stokMerah.pop());
                         System.out.println("Merah yang diambil : " + ambilMerah);
@@ -170,7 +159,6 @@ public class UsahaBatuBata {
                             
 
                     }else if (input2 == 4){
-                        Scanner pilihjenis4 = new Scanner(System.in);
                         System.out.println("\t1 Paket = 2000 biji");
                         ambilHebel.push(stokHebel.pop());
                         System.out.println("Hebel yang diambil : " + ambilHebel);
