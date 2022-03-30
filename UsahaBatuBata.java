@@ -32,7 +32,7 @@ public class UsahaBatuBata {
         LinkedList <String> ambilMerah = new LinkedList<>();
         LinkedList <String> ambilHebel = new LinkedList<>();
 
-        ArrayList  KapurPutih = new ArrayList ();
+        ArrayList KapurPutih = new ArrayList();
         ArrayList MerahInter = new ArrayList();
         ArrayList Merah = new ArrayList();
         ArrayList Hebel = new ArrayList();
